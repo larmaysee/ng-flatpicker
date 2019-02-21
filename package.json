@@ -1,0 +1,26 @@
+{
+	"name": "ng-flatpickr",
+	"version": "1.0.0",
+	"description": "flatpickr is datetime framework bind  with angularjs",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"ng-flackpickr",
+		"npm",
+		"flatpickr"
+	],
+	"author": "Lar May See",
+	"license": "ISC",
+	"dependencies": {
+		"flatpickr": "^4.5.2",
+		"grunt": "^1.0.3",
+		"grunt-contrib-coffee": "^2.0.0",
+		"grunt-contrib-concat": "^0.5.0",
+		"grunt-contrib-cssmin": "^3.0.0",
+		"grunt-contrib-sass": "^0.7.3",
+		"grunt-contrib-uglify": "^4.0.0",
+		"grunt-contrib-watch": "^1.1.0"
+	}
+}
