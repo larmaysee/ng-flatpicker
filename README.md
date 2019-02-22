@@ -16,7 +16,7 @@ Before installation you must to include [flatpickr](https://flatpickr.js.org/) t
 **Install with npm**
 
 ```bash
-  npm i ng-flatpicker
+  npm i ng-flatpickerr
 ```
 
 After run the above command
