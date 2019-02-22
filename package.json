@@ -1,7 +1,7 @@
 {
-	"name": "ng-flatpickr",
+	"name": "ng-flatpicker",
 	"version": "1.0.0",
-	"description": "flatpickr is datetime framework bind  with angularjs",
+	"description": "flatpicker is datetime framework bind  with angularjs",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
 	"license": "ISC",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/LarMaySee/ng-flatpickr.git"
+		"url": "https://github.com/LarMaySee/ng-flatpicker.git"
 	},
 	"dependencies": {
 		"flatpickr": "^4.5.2",

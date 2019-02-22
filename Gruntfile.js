@@ -2,8 +2,8 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		concat: {
 			js: {
-				src: ['src/ng-flatpickr.js', 'src/test.js'],
-				dest: 'dist/ng-flatpickr.min.js',
+				src: ['src/ng-flatpicker.js'],
+				dest: 'dist/ng-flatpicker.min.js',
 			}
 		},
 		watch: {
