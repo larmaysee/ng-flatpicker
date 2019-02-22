@@ -1,136 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="demo">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Flat Picker Demo</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="../node_modules/flatpickr/dist/themes/dark.css"
-    />
-  </head>
 
-  <body>
-    <!-- test  -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Flat Picker Demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../node_modules/flatpickr/dist/themes/dark.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-            </li>
-          </ul>
-          <ul class=" navbar-nav my-2 my-lg-0">
-            <li class="nav-item">
-              <a href="https://github.com/larmaysee" class="nav-link"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-          </ul>
+<body>
+  <!-- test  -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+        <ul class=" navbar-nav my-2 my-lg-0">
+          <li class="nav-item">
+            <a href="https://github.com/larmaysee" class="nav-link"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row" style="padding:16px;">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h1 class="display-4">Angularjs FlatPickr Directive</h1>
+          <p class="lead">
+            This is datetime picker for angularjs. Flatpickr is a lightweight
+            and powerful datetime picker. Lean, UX-driven, and extensible, yet
+            it doesn’t depend on any libraries. There’s minimal UI but many
+            themes. Rich, exposed APIs and event system make it suitable for
+            any environment. This “lean” philosophy translates to less size
+            and better performance, with a bonus of not having to load 8
+            libraries for a calendar. Please read
+            <a href="https://flatpickr.js.org/" target="_blank">FlatPickr Documentaion.</a>
+          </p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://github.com/LarMaySee/ng-flatpickr/archive/master.zip" role="button">Download</a>
+          </p>
         </div>
-      </nav>
+        <div class="wrapp">
+          <p></p>
+        </div>
+        <div class="form-group">
+          <label for="">Flat Picker Testing</label>
+          <input type="text" ng-flatpickr options="{dateFormat:'Y-m-d'}" class="form-control" placeholder="Select a date"
+            ng-model="demoDate" />
+        </div>
 
-      <div class="row" style="padding:16px;">
-        <div class="col-md-12">
-          <div class="jumbotron">
-            <h1 class="display-4">Angularjs FlatPickr Directive</h1>
-            <p class="lead">
-              This is datetime picker for angularjs. Flatpickr is a lightweight
-              and powerful datetime picker. Lean, UX-driven, and extensible, yet
-              it doesn’t depend on any libraries. There’s minimal UI but many
-              themes. Rich, exposed APIs and event system make it suitable for
-              any environment. This “lean” philosophy translates to less size
-              and better performance, with a bonus of not having to load 8
-              libraries for a calendar. Please read
-              <a href="https://flatpickr.js.org/" target="_blank"
-                >FlatPickr Documentaion.</a
-              >
-            </p>
-            <p class="lead">
-              <a
-                class="btn btn-primary btn-lg"
-                href="https://github.com/LarMaySee/ng-flatpickr/archive/master.zip"
-                role="button"
-                >Download</a
-              >
-            </p>
-          </div>
-          <div class="wrapp">
-            <p></p>
-          </div>
-          <div class="form-group">
-            <label for="">Flat Picker Testing</label>
-            <input
-              type="text"
-              ng-flatpickr
-              options="{dateFormat:'Y-m-d'}"
-              class="form-control"
-              placeholder="Select a date"
-              ng-model="demoDate"
-            />
-          </div>
+        <div class="form-group">
+          <label for="">Flat Picker Testing</label>
+          <input type="text" ng-flatpickr class="form-control" placeholder="Select a date" ng-model="demoDateTime" />
+        </div>
 
-          <div class="form-group">
-            <label for="">Flat Picker Testing</label>
-            <input
-              type="text"
-              ng-flatpickr
-              class="form-control"
-              placeholder="Select a date"
-              ng-model="demoDateTime"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="">Flat Picker Testing</label>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Select a date"
-              ng-model="demoDateTime"
-            />
-          </div>
+        <div class="form-group">
+          <label for="">Flat Picker Testing</label>
+          <input type="text" class="form-control" placeholder="Select a date" ng-model="demoDateTime" />
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
-    <script src="../node_modules/flatpickr/dist/flatpickr.js"></script>
-    <script src="../dist/ng-flatpickr.min.js"></script>
-    <script>
-      var app = angular.module("demo", ["ng-flatpickr"]);
-    </script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="../node_modules/flatpickr/dist/flatpickr.js"></script>
+  <script src="../dist/ng-flatpickr.min.js"></script>
+  <script>
+    var app = angular.module("demo", ["ng-flatpickr"]);
+  </script>
+</body>
+
 </html>
