@@ -8,8 +8,8 @@
 
 (function (root, factory) {
   'use strict';
-  root['ng-flatpicker'] = factory(root.angular, root.flatpicker);
-}(this, function (angular, flatpicker) {
+  root['ng-flatpicker'] = factory(root.angular, root.flatpickr);
+}(this, function (angular, flatpickr) {
 
   'use strict';
   var ngFlatpicker = angular.module('ng-flatpicker', []);
@@ -21,7 +21,7 @@
         options: '&'
       },
       link: function (scope, element, attrs, ngModel) {
-        var fpInstance = flatpicker ? flatpicker : FlatpickrInstance;
+        var fpInstance = flatpickr ? flatpickr : FlatpickrInstance;
 
         if (!fpInstance) {
           console.warn('Unable to find any flatpicker installation');
